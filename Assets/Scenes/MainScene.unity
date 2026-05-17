@@ -166,13 +166,15 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 31408157}
-  m_Enabled: 0
+  m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 2bfae30bb05305949a58f898ca3d6579, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::ReelController
   spinSpeed: 600
   resetPosition: -550
+  shouldSpin: 0
+  stopPosition: 0
 --- !u!1 &71106649
 GameObject:
   m_ObjectHideFlags: 0
@@ -595,13 +597,15 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 448255215}
-  m_Enabled: 0
+  m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 2bfae30bb05305949a58f898ca3d6579, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::ReelController
   spinSpeed: 600
   resetPosition: -550
+  shouldSpin: 0
+  stopPosition: 0
 --- !u!1 &576057275
 GameObject:
   m_ObjectHideFlags: 0
@@ -947,10 +951,10 @@ RectTransform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
-  - {fileID: 313953162}
-  - {fileID: 723050534}
-  - {fileID: 71106650}
   - {fileID: 1102941695}
+  - {fileID: 71106650}
+  - {fileID: 723050534}
+  - {fileID: 313953162}
   m_Father: {fileID: 1104966033}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
@@ -965,13 +969,15 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1070151260}
-  m_Enabled: 0
+  m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 2bfae30bb05305949a58f898ca3d6579, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::ReelController
   spinSpeed: 600
   resetPosition: -550
+  shouldSpin: 0
+  stopPosition: 0
 --- !u!1 &1102941694
 GameObject:
   m_ObjectHideFlags: 0

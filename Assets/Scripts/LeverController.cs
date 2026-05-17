@@ -15,6 +15,9 @@ public class LeverController : MonoBehaviour
     // Stops repeated clicking
     private bool isSpinning = false;
 
+    // Time to reel stoppage
+    private float spinTime = 0f;
+
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
@@ -24,7 +27,25 @@ public class LeverController : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        
+        // Counting Spinning Time
+        if (isSpinning)
+        {
+            spinTime += Time.deltaTime;
+
+            // Stop reels after 3 seconds
+            if (spinTime >= 3f)
+            {
+                reel1.shouldSpin = false;
+                reel2.shouldSpin = false;
+                reel3.shouldSpin = false;
+
+                leverDown.SetActive(false);
+                leverUp.SetActive(true);
+
+                isSpinning = false;
+                spinTime = 0f;
+            }
+        }
     }
 
     public void PullLever()
@@ -41,9 +62,8 @@ public class LeverController : MonoBehaviour
         leverDown.SetActive(true);
 
         // Start spinning reels
-        reel1.enabled = true;
-        reel2.enabled = true;
-        reel3.enabled = true;
-
+        reel1.shouldSpin = true;
+        reel2.shouldSpin = true;
+        reel3.shouldSpin = true;
     }
 }
