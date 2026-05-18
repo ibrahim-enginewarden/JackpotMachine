@@ -8,7 +8,7 @@ public class LeverController : MonoBehaviour
     public TMP_Text coinText;
     public TMP_Text moneyChangeText;
 
-    private int coins = 100;
+    private int coins = 200;
     private int currentBet = 0;
 
     // Bet Buttons
